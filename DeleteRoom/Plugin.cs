@@ -15,7 +15,11 @@ namespace DeleteRoom
         public override string Prefix => "DelRoom";
         public override string Name => "DeleteRoomByRABB1T";
         public override string Author => "RABB1T#3072";
+        public override Version Version => new Version(1, 0, 0);
+        public override Version RequiredExiledVersion => new Version(6, 1, 0);
+
         public EventHandler EventHandlers { get; private set; }
+
         public static Plugin plugin;
 
         public override void OnEnabled()
