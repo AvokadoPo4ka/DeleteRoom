@@ -1,4 +1,4 @@
-﻿using Exiled.API.Enums;
+using Exiled.API.Enums;
 using Exiled.API.Features;
 using System;
 using System.Linq;
@@ -11,6 +11,9 @@ namespace DeleteRoom
         public override string Prefix => "DelRoom";
         public override string Name => "DeleteRoomByRABB1T";
         public override string Author => "RABB1T#3072";
+        public override Version Version => new Version(1, 0, 0);
+        public override Version RequiredExiledVersion => new Version(7, 0, 0);
+        
         public EventHandler EventHandlers { get; private set; }
         public static Plugin plugin;
 
